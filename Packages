@@ -1,0 +1,64 @@
+Package: olver-stuti
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Hòa Huỳnh
+Depends: firmware (>= 8.0), cy+cpu.arm64
+Filename: ./debs/olver-stuti_1.0_iphoneos-arm.deb
+Size: 53918
+MD5sum: f8f05e9c6a052c12b162bf269200e666
+SHA1: 8d0164ef8ed8d6354e4d18703c2f53735baa8bfb
+SHA256: 61858e13c91bb99e3a713b2699781d8e6a20294d8020c34c68377cbd7367b6f5
+Section: System
+Priority: optional
+Description: Chất nền dành cho OlVer jailbreak
+Author: Hòa Huỳnh
+Name:OlVer Stuti
+
+Package: olver-compatibility
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Hòa Huuynhf
+Depends: tweakinject, olver-stuti, cy+cpu.arm64
+Filename: ./debs/olver-compatibility_1.0_iphoneos-arm.deb
+Size: 4936
+MD5sum: 802fe0932f0f4e9711a2329fd25373b3
+SHA1: e1528be2ddc289f7fa8305d6ba3724deb8806c8e
+SHA256: 6a001a3f265d7664e2d0bdef674bbee0f1ccc1f3655e857e6a58bb9fd8ee70e8
+Section: System
+Description: Trình bao bọc khả năng tương thích để các chỉnh sửa Chất nền hoạt động với Tweak Injector + OlVer
+Author: Hòa Huỳnh
+Name: OlVer Compatibility
+
+Package: tweakinject
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Hòa Huỳnh
+Depends: firmware (>= 12.0), cy+cpu.arm64, olver-stuti
+Filename: ./debs/tweakinject_1.0_iphoneos-arm.deb
+Size: 38270
+MD5sum: b1bb5fa2b9d425a314c06b691940b4b3
+SHA1: f44d23fa11e1b839c21d2af8438a9b8c2155486e
+SHA256: 345a9304918de627244aa59950bf93b35c2466967903c41aa5d2c69d072ab9ec
+Section: System
+Description: Bộ nạp tinh chỉnh mục đích chung với chế độ an toàn trong trường hợp gặp sự cố
+Author: Hòa Huỳnh
+Name: Tweak Injector
+
+Package: xyz.willy.zebra
+Architecture: iphoneos-arm
+Version: 1.1.26
+Section: Packaging
+Maintainer: Zebra Team <team@getzbra.com>
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: ./debs/xyz.willy.zebra_1.1.26_iphoneos-arm.deb
+Size: 9540028
+MD5sum: 08ebd70e8b95c7f4c04a6b771f0b75e3
+SHA1: 3064fe7177f2f66319b1398fa015ded8270e58a4
+SHA256: f05ebfb0fb0896a8fe5246800dd524939b622cd6cdabff25a74b1031b378eeff
+Description: A Useful Package Manager
+Tag: compatible::9.0-14.8
+Name: Zebra
+Author: Zebra Team <team@getzbra.com>
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
