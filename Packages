@@ -1,60 +1,61 @@
 Package: com.ex.libsubstitute
-Version: 0.1.3
+Version: 2.0
 Priority: optional
 Section: System
-Maintainer: CoolStar <coolstarorganization@gmail.com>
+Maintainer: Hòa Huỳnh
 Depends: firmware (>= 8.0), cy+cpu.arm64
 Architecture: iphoneos-arm
-Filename: .//debs/com.ex.substitute_0.1.3-coolstar_iphoneos-arm.deb
-Size: 53940
-MD5sum: 8d8546b72f20fb9a48160c1ffcea966c
+Filename: ./debs/com.ex.libsubstitute_2.0_iphoneos-arm.deb
+Size: 53936
+MD5sum: 29a4e318ab302646222e3ea65c8fc5d2
 Description: Substrate substitute for code substitution (library only)
 author: comex <comexk+da@gmail.com>
 name: Substitute
 
 Package: mobilesubstrate
-Version: 99.3
+Version: 99.99
 Section: System
-Maintainer: CoolStar <coolstarorganization@gmail.com>
+Maintainer: Hòa Huỳnh
 Depends: org.coolstar.tweakinject, com.ex.libsubstitute, cy+cpu.arm64
 Architecture: iphoneos-arm
-Filename: .//debs/mobilesubstrate_99.3_iphoneos-arm.deb
-Size: 4874
-MD5sum: d36748f57a7336b53fcfad734848146d
+Filename: ./debs/mobilesubstrate_99.99_iphoneos-arm.deb
+Size: 4888
+MD5sum: 742f09bf09af90a2785124656cb4aa30
 Description: Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute
-author: CoolStar <coolstarorganization@gmial.com>
+author: Hòa Huỳnh
 name: Substrate Compatibility Layer
 
 Package: org.coolstar.tweakinject
-Version: 1.4.2
+Version: 1.5
 Section: System
-Maintainer: CoolStar <coolstarorganization@gmail.com>
+Maintainer: Hòa Huỳnh
 Depends: firmware (>= 10.0), cy+cpu.arm64, com.ex.libsubstitute | org.coolstar.substrateloader
 Architecture: iphoneos-arm
-Filename: .//debs/org.coolstar.tweakinject_1.4.2-sileo_iphoneos-arm.deb
-Size: 38134
-MD5sum: e26f9ca7d587cd2160523d8c4c1da275
+Filename: ./debs/org.coolstar.tweakinject_1.5_iphoneos-arm.deb
+Size: 38230
+MD5sum: ced467f9e044d0c13d51c97cf1a9a222
 Description: General purpose tweak loader with safe mode in case of crashes
-author: CoolStar <coolstarorganization@gmail.com>
-dev: coolstar
+author: Hòa Huỳnh
+dev: HoaHuynh
 name: Tweak Injector
 tag: role::hacker, purpose::library
 
-Package: preferenceloader
-Version: 2.2.4~beta1
-Section: System
-Maintainer: Dustin Howett <cydia.pl@relay.howett.net>
-Depends: mobilesubstrate
-Architecture: iphoneos-arm
-Filename: .//debs/preferenceloader_2.2.4~beta1.deb
-Size: 33838
-Installed-Size: 532
-MD5sum: 61efed5a8aa8507208731da2d737c882
-Description: load preferences in style
-author: Dustin Howett <cydia.pl@relay.howett.net>
-homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
-dev: dustinhowett
-name: PreferenceLoader
-tag: role::hacker, purpose::library
-depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
 
+Package: xyz.willy.zebra
+Architecture: iphoneos-arm
+Version: 1.1.26
+Section: Packaging
+Maintainer: Zebra Team <team@getzbra.com>
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: ./debs/xyz.willy.zebra_1.1.26_iphoneos-arm.deb
+Size: 9540028
+MD5sum: 08ebd70e8b95c7f4c04a6b771f0b75e3
+SHA1: 3064fe7177f2f66319b1398fa015ded8270e58a4
+SHA256: f05ebfb0fb0896a8fe5246800dd524939b622cd6cdabff25a74b1031b378eeff
+Description: A Useful Package Manager
+Tag: compatible::9.0-14.8
+Name: Zebra
+Author: Zebra Team <team@getzbra.com>
+Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
+Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
+Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
