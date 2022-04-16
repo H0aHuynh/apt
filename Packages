@@ -1,64 +1,60 @@
-Package: olver-stuti
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: Hòa Huỳnh
-Depends: firmware (>= 8.0), cy+cpu.arm64
-Filename: ./debs/olver-stuti_1.0_iphoneos-arm.deb
-Size: 53918
-MD5sum: f8f05e9c6a052c12b162bf269200e666
-SHA1: 8d0164ef8ed8d6354e4d18703c2f53735baa8bfb
-SHA256: 61858e13c91bb99e3a713b2699781d8e6a20294d8020c34c68377cbd7367b6f5
-Section: System
+Package: com.ex.libsubstitute
+Version: 0.1.3
 Priority: optional
-Description: Chất nền dành cho OlVer jailbreak
-Author: Hòa Huỳnh
-Name:OlVer Stuti
-
-Package: olver-compatibility
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: Hòa Huuynhf
-Depends: tweakinject, olver-stuti, cy+cpu.arm64
-Filename: ./debs/olver-compatibility_1.0_iphoneos-arm.deb
-Size: 4936
-MD5sum: 802fe0932f0f4e9711a2329fd25373b3
-SHA1: e1528be2ddc289f7fa8305d6ba3724deb8806c8e
-SHA256: 6a001a3f265d7664e2d0bdef674bbee0f1ccc1f3655e857e6a58bb9fd8ee70e8
 Section: System
-Description: Trình bao bọc khả năng tương thích để các chỉnh sửa Chất nền hoạt động với Tweak Injector + OlVer
-Author: Hòa Huỳnh
-Name: OlVer Compatibility
-
-Package: tweakinject
-Version: 1.0
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Depends: firmware (>= 8.0), cy+cpu.arm64
 Architecture: iphoneos-arm
-Maintainer: Hòa Huỳnh
-Depends: firmware (>= 12.0), cy+cpu.arm64, olver-stuti
-Filename: ./debs/tweakinject_1.0_iphoneos-arm.deb
-Size: 38270
-MD5sum: b1bb5fa2b9d425a314c06b691940b4b3
-SHA1: f44d23fa11e1b839c21d2af8438a9b8c2155486e
-SHA256: 345a9304918de627244aa59950bf93b35c2466967903c41aa5d2c69d072ab9ec
+Filename: .//debs/com.ex.substitute_0.1.3-coolstar_iphoneos-arm.deb
+Size: 53940
+MD5sum: 8d8546b72f20fb9a48160c1ffcea966c
+Description: Substrate substitute for code substitution (library only)
+author: comex <comexk+da@gmail.com>
+name: Substitute
+
+Package: mobilesubstrate
+Version: 99.3
 Section: System
-Description: Bộ nạp tinh chỉnh mục đích chung với chế độ an toàn trong trường hợp gặp sự cố
-Author: Hòa Huỳnh
-Name: Tweak Injector
-
-Package: xyz.willy.zebra
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Depends: org.coolstar.tweakinject, com.ex.libsubstitute, cy+cpu.arm64
 Architecture: iphoneos-arm
-Version: 1.1.26
-Section: Packaging
-Maintainer: Zebra Team <team@getzbra.com>
-Depends: dpkg, uikittools, firmware (>= 9.0)
-Filename: ./debs/xyz.willy.zebra_1.1.26_iphoneos-arm.deb
-Size: 9540028
-MD5sum: 08ebd70e8b95c7f4c04a6b771f0b75e3
-SHA1: 3064fe7177f2f66319b1398fa015ded8270e58a4
-SHA256: f05ebfb0fb0896a8fe5246800dd524939b622cd6cdabff25a74b1031b378eeff
-Description: A Useful Package Manager
-Tag: compatible::9.0-14.8
-Name: Zebra
-Author: Zebra Team <team@getzbra.com>
-Icon: file:///Applications/Zebra.app/AppIcon60x60@3x.png
-Depiction: https://getzbra.com/repo/depictions/xyz.willy.Zebra/
-Support: https://getzbra.com/repo/depictions/xyz.willy.Zebra/bug_report.html
+Filename: .//debs/mobilesubstrate_99.3_iphoneos-arm.deb
+Size: 4874
+MD5sum: d36748f57a7336b53fcfad734848146d
+Description: Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute
+author: CoolStar <coolstarorganization@gmial.com>
+name: Substrate Compatibility Layer
+
+Package: org.coolstar.tweakinject
+Version: 1.4.2
+Section: System
+Maintainer: CoolStar <coolstarorganization@gmail.com>
+Depends: firmware (>= 10.0), cy+cpu.arm64, com.ex.libsubstitute | org.coolstar.substrateloader
+Architecture: iphoneos-arm
+Filename: .//debs/org.coolstar.tweakinject_1.4.2-sileo_iphoneos-arm.deb
+Size: 38134
+MD5sum: e26f9ca7d587cd2160523d8c4c1da275
+Description: General purpose tweak loader with safe mode in case of crashes
+author: CoolStar <coolstarorganization@gmail.com>
+dev: coolstar
+name: Tweak Injector
+tag: role::hacker, purpose::library
+
+Package: preferenceloader
+Version: 2.2.4~beta1
+Section: System
+Maintainer: Dustin Howett <cydia.pl@relay.howett.net>
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Filename: .//debs/preferenceloader_2.2.4~beta1.deb
+Size: 33838
+Installed-Size: 532
+MD5sum: 61efed5a8aa8507208731da2d737c882
+Description: load preferences in style
+author: Dustin Howett <cydia.pl@relay.howett.net>
+homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+dev: dustinhowett
+name: PreferenceLoader
+tag: role::hacker, purpose::library
+depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=preferenceloader2Data
+
