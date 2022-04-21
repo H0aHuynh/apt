@@ -1,15 +1,44 @@
-Package: pspawn
-Version: 1.0
-Section: Utilities
+Package: com.ex.libsubstitute
+Version: 2.0
+Priority: optional
+Section: System
 Maintainer: Hòa Huỳnh
+Depends: firmware (>= 8.0), cy+cpu.arm64
 Architecture: iphoneos-arm
-Filename: ./debs/pspawn_1.0_iphoneos-arm.deb
-Size: 15236
-MD5sum: 728e3b9e791c0081888201c5e9c2d7c5
-Description: Hộ trợ chất nền
-Author: Hòa Huỳnh
-name: Pspawn Payload
+Filename: ./debs/com.ex.libsubstitute_2.0_iphoneos-arm.deb
+Size: 53936
+MD5sum: 29a4e318ab302646222e3ea65c8fc5d2
+Description: Substrate substitute for code substitution (library only)
+author: comex <comexk+da@gmail.com>
+name: Substitute
 
+Package: mobilesubstrate
+Version: 99.99
+Section: System
+Maintainer: Hòa Huỳnh
+Depends: org.coolstar.tweakinject, com.ex.libsubstitute, cy+cpu.arm64
+Architecture: iphoneos-arm
+Filename: ./debs/mobilesubstrate_99.99_iphoneos-arm.deb
+Size: 4888
+MD5sum: 742f09bf09af90a2785124656cb4aa30
+Description: Compatibility wrapper for Substrate tweaks to work with Tweak Injector + Substitute
+author: Hòa Huỳnh
+name: Substrate Compatibility Layer
+
+Package: org.coolstar.tweakinject
+Version: 1.5
+Section: System
+Maintainer: Hòa Huỳnh
+Depends: firmware (>= 10.0), cy+cpu.arm64, com.ex.libsubstitute | org.coolstar.substrateloader
+Architecture: iphoneos-arm
+Filename: ./debs/org.coolstar.tweakinject_1.5_iphoneos-arm.deb
+Size: 38230
+MD5sum: ced467f9e044d0c13d51c97cf1a9a222
+Description: General purpose tweak loader with safe mode in case of crashes
+author: Hòa Huỳnh
+dev: HoaHuynh
+name: Tweak Injector
+tag: role::hacker, purpose::library
 
 
 Package: xyz.willy.zebra
