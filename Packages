@@ -43,15 +43,15 @@ tag: role::hacker, purpose::library
 
 Package: xyz.willy.zebra
 Architecture: iphoneos-arm
-Version: 1.1.26
+Version: 1.1.30-6+debug
 Section: Packaging
 Maintainer: Zebra Team <team@getzbra.com>
 Depends: dpkg, uikittools, firmware (>= 9.0)
-Filename: ./debs/xyz.willy.zebra_1.1.26_iphoneos-arm.deb
-Size: 9540028
-MD5sum: 08ebd70e8b95c7f4c04a6b771f0b75e3
-SHA1: 3064fe7177f2f66319b1398fa015ded8270e58a4
-SHA256: f05ebfb0fb0896a8fe5246800dd524939b622cd6cdabff25a74b1031b378eeff
+Filename: ./debs/xyz.willy.zebra_1.1.30-6+debug_iphoneos-arm.deb
+Size: 9665916
+MD5sum: aaceb32d5df1e740b1e2371755d5aef9
+SHA1: 0f314d20d90c6ca42cca8dab15c385edcfdfad42
+SHA256: 43c2c67dc92c9e687a9d9a03ae0931645e030b53b940847b0b24178feb3b5b22
 Description: A Useful Package Manager
 Tag: compatible::9.0-14.8
 Name: Zebra
